@@ -5,32 +5,36 @@
 /*Body style start*/
 body {
     color: black;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: 'Times New Roman', Times, serif
 }
 /*Body style end*/
 
 /*header style start*/
 header {
-    padding: 20px 35px;
+    padding: 10px 35px;
     background-image: url("../Image/Hero.JPG");
     display: flex ;
     background-size: cover;
-    background-attachment: fixed;
     background-position: 80%;
     z-index: 9999;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-attachment: fixed;
+    
     
 }
 header h1 a {
+    padding: 5%;
+    background-color: rgba(0,0,0,0.5) ;
     font-weight: bold;
     font-size: 40px;
     color: white;
     margin: 0;
-    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    text-shadow: 0 -10px 10px rgba(0,0,0,0.5);
     text-decoration: none;
 }
-.mo {
-    color: #1F4C85;
-}
+
 header a {
     text-decoration: none;
     color: white;
@@ -45,12 +49,13 @@ flex-wrap: wrap;
 justify-content: space-between;
 align-items: center;
 list-style: none;
+margin-right: 100px;
 }
 header nav ul li {
     display: inline;
 }
 header nav ul li a {
-    font-size: 20px;
+    font-size: 10px;
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
@@ -73,16 +78,39 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap; 
     align-items: flex-end;
-    background-attachment: fixed;
     background-position: 80%;
     flex-direction: row-reverse;
     
 }
-.text {
+.text h2 {
     margin:80px 80px; 
     padding: 10px;   
     background-color: rgba(0,0,0,0.5);
-    font-size: 25px;
+    font-size: 40px;
     color: white;
+    text-shadow: 0 -10px 10px rgba(0,0,0,0.5);
     }
 /*Hero style end*/
+.about-me {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.about-me h2 {
+    font-size: 60px;
+    margin: 50px 60px 0 200px ;
+    text-align: right;
+    color: #1F4C85;
+    border-right: 5px solid #1F4C85;
+    padding: 10px;
+}
+.me {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.about-me article {
+    font-size: 20px;
+    margin: 50px 100px 0 0;
+    color: #1F4C85;
+}
