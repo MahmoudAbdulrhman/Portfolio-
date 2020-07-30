@@ -91,12 +91,14 @@ header nav ul li a:hover {
     text-shadow: 0 -10px 10px rgba(0,0,0,0.5);
     }
 /*Hero style end*/
-.about-me {
+
+/*About Me style*/
+.info {
     display: flex;
     justify-content: center;
     flex-direction: row;
 }
-.about-me h2 {
+.info h2 {
     font-size: 60px;
     margin: 50px 60px 0 200px ;
     text-align: right;
@@ -109,8 +111,9 @@ header nav ul li a:hover {
     justify-content: center;
     flex-direction: column;
 }
-.about-me article {
+.info article {
     font-size: 20px;
     margin: 50px 100px 0 0;
     color: #1F4C85;
 }
+/*about me stayle ends*/
