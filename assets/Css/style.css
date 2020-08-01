@@ -144,6 +144,7 @@ header nav ul li a:hover {
     width: 100%;
     height: 100%;
     position: relative;
+    border:solid 3px  #540806;
 }
 .effict .img {
     width: 100%;
