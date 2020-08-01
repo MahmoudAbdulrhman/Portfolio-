@@ -16,7 +16,7 @@ header {
     background-image: url("../Image/Hero-1.JPG");
     display: flex ;
     background-size: cover ;
-    background-position: 80%;
+    background-position: ;
     ba
     z-index: 9999;
     position: -webkit-sticky;
@@ -196,7 +196,7 @@ header nav ul li a:hover {
 }
 .Contact-me h2 {
     font-size: 60px;
-    margin: 50px 60px 0 12px ;
+    margin: 50px 60px 0 72px ;
     text-align: right;
     color:#540806;
     border-right: 5px solid #540806;
@@ -207,7 +207,7 @@ header nav ul li a:hover {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin:50px 100px 0 0;
+    margin:90px 100px 0 0;
     flex-direction: row;
 }
 .my-contact-info .phone {
@@ -233,4 +233,9 @@ header nav ul li a:hover {
     color: brown;
     border-bottom: solid 1px brown;
     font-size: 25px;
+}
+.Contact-me .hline {
+    margin-left: 50px;
+    background-color:  rgba(184,163,96, 0.0);
+    padding: 20px;
 }
