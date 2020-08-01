@@ -4,7 +4,7 @@
 }
 /*Body style start*/
 body {
-    background-color: rgba(0,255,255,0.35);
+    background-color: rgba(184,163,96, 0.20);
     color: black;
     font-family: 'Times New Roman', Times, serif
 }
@@ -13,7 +13,7 @@ body {
 /*header style start*/
 header {
     padding: 10px 35px;
-    background-image: url("../Image/Hero.JPG");
+    background-image: url("../Image/Hero-1.JPG");
     display: flex ;
     background-size: cover;
     background-position: 80%;
@@ -73,12 +73,12 @@ header nav ul li a:hover {
 /*Hero style start*/
 .hero   {
     height: 600px;
-    background-image: url("../Image/Hero.JPG");
+    background-image: url("../Image/Hero-1.JPG");
     background-size: cover;
     display: flex;
     flex-wrap: wrap; 
     align-items: flex-end;
-    background-position: 80%;
+    background-position: 100% ;
     flex-direction: row-reverse;
     
 }
@@ -102,8 +102,8 @@ header nav ul li a:hover {
     font-size: 60px;
     margin: 50px 60px 0 200px ;
     text-align: right;
-    color: #1F4C85;
-    border-right: 5px solid #1F4C85;
+    color:#540806;
+    border-right: 5px solid #540806;
     padding: 10px;
 }
 .me {
@@ -114,6 +114,58 @@ header nav ul li a:hover {
 .info article {
     font-size: 20px;
     margin: 50px 100px 0 0;
-    color: #1F4C85;
+    color: #540806;
 }
 /*about me stayle ends*/
+
+/*Work style start*/
+
+.sample {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.sample h2 {
+    font-size: 60px;
+    margin: 50px 60px 0 212px ;
+    text-align: right;
+    color:#540806;
+    border-right: 5px solid #540806;
+    padding: 10px;
+}
+.album  {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.effict {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.effict .img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.effict .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 5% 5%;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+.effict:hover .img img {
+    transform: scale(1.5);
+}
+
+.w-1 {
+    grid-column: span 2;
+    grid-row:span 2 ; 
+}
+.w-2 {
+    grid-row: span 1;
+}
