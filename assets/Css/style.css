@@ -15,8 +15,9 @@ header {
     padding: 10px 35px;
     background-image: url("../Image/Hero-1.JPG");
     display: flex ;
-    background-size: cover;
+    background-size: cover ;
     background-position: 80%;
+    ba
     z-index: 9999;
     position: -webkit-sticky;
     position: sticky;
@@ -183,4 +184,53 @@ header nav ul li a:hover {
     padding:10px 10px 10px 50px;
     
    
+}
+/*Work style end*/
+
+/*Contact Me style start*/
+
+.Contact-me {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.Contact-me h2 {
+    font-size: 60px;
+    margin: 50px 60px 0 12px ;
+    text-align: right;
+    color:#540806;
+    border-right: 5px solid #540806;
+    padding: 10px;
+}
+.my-contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin:50px 100px 0 0;
+    flex-direction: row;
+}
+.my-contact-info .phone {
+
+    color: brown;
+    border-bottom: solid 1px brown;
+    font-size: 25px;
+}
+.my-contact-info .e-mail {
+    margin-left: 15px;
+    color: brown;
+    border-bottom: solid 1px brown;
+    font-size: 25px;
+}
+.my-contact-info .linkedin{
+    margin-left: 25px;
+    color: brown;
+    border-bottom: solid 1px brown;
+    font-size: 25px;
+}
+.my-contact-info .github {
+    margin-left: 15px;
+    color: brown;
+    border-bottom: solid 1px brown;
+    font-size: 25px;
 }
