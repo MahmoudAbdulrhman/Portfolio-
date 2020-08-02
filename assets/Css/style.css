@@ -232,11 +232,7 @@ header nav ul li a:hover {
     border-bottom: solid 1px brown;
     font-size: 25px;
 }
-.Contact-me .hline {
-    margin-left: 50px;
-    background-color:  rgba(184,163,96, 0.0);
-    padding: 20px;
-}
+
 
 @media screen and (min-width: 1200px) {
 
@@ -324,6 +320,13 @@ header {
     width: 100%;
     flex-direction: column;
     align-items: center;
+    background-image: url("../Image/Hero-1.JPG");
+    display: flex ;
+    background-size: cover ;
+    background-position: 80%;
+    z-index: 9999;
+    position: absolute;
+  
 }
 header nav ul {
     display: flex;
@@ -344,6 +347,9 @@ header nav ul {
     background-position: 100% ;
     flex-direction: row-reverse;
 }
+.hero h2 {
+    font-size: 20px;
+}
 .sample h2 {
     margin-right: auto;
     margin-left: 5px;
@@ -358,14 +364,31 @@ header nav ul {
     position: absolute;
     margin-top: 1px;
     background-color:rgba(84, 8, 6,0.5);
-    font-size: 5px;
+    font-size: 0px;
     color: white;
-    padding:0.25px;
+    padding:0px;
 }
 body .content .Contact-me {
-    width: 100%;
-    margin-left: -10px;
+   display: flex;
+   flex-direction: column;
+   
 }
+.Contact-me h2 {
+    font-size: 60px;
+    margin: 50px 30px 0 72px ;
+    text-align: right;
+    color:#540806;
+    border-bottom: 5px solid #540806;
+    border-right:0px ;
+    padding: 10px;
 
-
+}
+.my-contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:10px 50px 0 0;
+    flex-direction: row;
+   
+}
 }
