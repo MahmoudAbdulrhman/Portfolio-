@@ -16,8 +16,7 @@ header {
     background-image: url("../Image/Hero-1.JPG");
     display: flex ;
     background-size: cover ;
-    background-position: ;
-    ba
+    background-position: 80%;
     z-index: 9999;
     position: -webkit-sticky;
     position: sticky;
@@ -196,7 +195,7 @@ header nav ul li a:hover {
 }
 .Contact-me h2 {
     font-size: 60px;
-    margin: 50px 60px 0 72px ;
+    margin: 50px 30px 0 72px ;
     text-align: right;
     color:#540806;
     border-right: 5px solid #540806;
@@ -238,4 +237,162 @@ header nav ul li a:hover {
     margin-left: 50px;
     background-color:  rgba(184,163,96, 0.0);
     padding: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+
+body .content {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+body .content .Contact-me h2 {
+    flex-direction: column;
+}
+body .content .Contact-me {
+    margin: -14px;
+}
+
+}
+@media screen and (max-width: 980px) {
+    
+    body .content {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+    body .content .Contact-me {
+        margin-left: 83px;
+    }
+
+    body .content .Contact-me .my-contact-info {
+        display: flex;
+        width: 100%;
+    }
+    body .content .Contact-me .my-contact-info div {
+        font-size: 15px;
+
+    }
+    body .Contact-me .my-contact-info a {
+        font-size: 15px;
+    }
+    
+    .effict .text {
+        position: absolute;
+        margin: -50px 0 0 0px;
+        background-color:rgba(84, 8, 6,0.5);
+        font-size: 15px;
+        color: white;
+        padding:10px;
+    }
+        
+
+}
+@media screen and (max-width: 768px) {
+  body .content {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+  }
+    header {
+       width: 100%;
+        padding: 10px 35px;
+        background-image: url("../Image/Hero-1.JPG");
+        display: flex ;
+        background-size: cover ;
+        background-position: 80%;
+        z-index: 9999;
+        position: static;
+        top: 0;
+        flex-direction: column;
+        align-items: center;
+        
+   }
+   header h1 a {
+    padding: 1%;
+    background-color: rgba(0,0,0,0.5) ;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    margin: 0;
+    text-shadow: 0 -10px 10px rgba(0,0,0,0.5);
+    text-decoration: none;
+   }
+   header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin-right: 125px;
+
+}
+    .hero {
+       width: 100%;
+   }
+
+      .info {
+        align-items: center;  
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .info h2 {
+        font-size: 60px;
+        margin: 0px;
+        width: 75%;
+        text-align: center;
+        color:#540806;
+        border-bottom: 5px solid #540806;
+        border-right: 0px;
+
+    }
+    .info article {
+        align-items: center;
+        width: 75%;
+        font-size: 15px;
+        margin: 50px 100px 0 0;
+        color: #540806;
+        text-align: center;
+    }
+    .sample {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .sample h2 {
+        font-size: 60px;
+        margin: 0px;
+        width: 75%;
+        text-align: center;
+        color:#540806;
+        border-bottom: 5px solid #540806;
+        border-right: 0px;
+    }
+    .album  {
+        width: 80%;
+        margin : 40px 0 0 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+    
+    .Contact-me {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .Contact-me h2 {
+        font-size: 60px;
+        margin: 0px;
+        width: 75%;
+        text-align: center;
+        color:#540806;
+        border-bottom: 5px solid #540806;
+        border-right: 0px;
+    }
+    
 }
